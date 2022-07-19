@@ -1,0 +1,75 @@
+.wrapper {
+    --search-button-radius: 92px;
+    --search-height: 46px;
+    --search-btn-width: 52px;
+    --search-top-space: 9px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--layout-header-height);
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    background-color: var(--white);
+}
+
+.inner {
+    display: flex;
+    height: 100%;
+    width: var(--layout-header-width);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.logo-link {
+    display: flex;
+}
+
+// actions
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin-left: 16px;
+    padding: 4px 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// user was login
+.action-btn {
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 4px 12px;
+    cursor: pointer;
+}
+
+.current-user {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 6px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 99px;
+    color: var(--white);
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+}
