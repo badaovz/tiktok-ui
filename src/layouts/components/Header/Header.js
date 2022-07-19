@@ -12,7 +12,7 @@ import Button from '~/components/Button';
 import { InboxIcon, MessageIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Menu from '~/components/Popper/Menu';
-import Search from '~/components/Search/Search';
+import Search from '~/layouts/components/Search/Search';
 import config from '~/config';
 import styles from './Header.module.scss';
 
