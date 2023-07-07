@@ -28,7 +28,6 @@ const getAuthLocal = () => {
 
 const Header = () => {
     const [currentUser, setCurrentUser] = useState(false);
-
     const handleSignOut = () => {
         setCurrentUser(false);
         localStorage.removeItem('auth');
@@ -102,7 +101,7 @@ const Header = () => {
                         </>
                     )}
 
-                    <Menu items={currentUser ? userData : menuItemData} onChange={handleOnchange} user={currentUser}>
+                    <Menu items={currentUser ? userData : menuItemData} onChange={handleOnchange}>
                         <button className={cx('more-btn')}>
                             {currentUser ? (
                                 <Image

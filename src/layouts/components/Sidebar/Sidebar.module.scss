@@ -1,4 +1,27 @@
-.wrapper {
+.ScrollContainer {
+    position: relative;
     width: 356px;
-    min-height: 1000px;
+
+    .container{
+        width: 348px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+        padding-right: 12px;
+        perspective: 1px;
+        transform-style: preserve-3d;
+        perspective-origin: right top;
+        background: rgba(255, 255, 255, 1.0);
+        top: 60px;
+        bottom: 0;
+        position: fixed;
+        z-index: 99;
+        padding-right: 8px!important;
+    }
+    
+    .wrapper {
+        padding: 20px 0 26px 8px;
+    }
 }
+
+

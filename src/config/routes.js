@@ -4,6 +4,7 @@ const routes = {
     following: '/following',
     live: '/live',
     upload: '/upload',
+    tag: '/tag/:tagname',
 };
 
-export default routes;
+export default routes; 

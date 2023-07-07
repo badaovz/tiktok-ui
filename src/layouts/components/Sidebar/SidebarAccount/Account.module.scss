@@ -1,0 +1,25 @@
+.wrapper {
+    font-size: 1.4rem;
+    position: relative;
+    padding: 16px 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        width: calc(100% - 16px);
+        height: 1px;
+        background-color: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+    }
+    .account-item {
+        padding: 8px;
+    }
+}
+.title{
+    color: var(--text-color);
+}
+
+.more-account {
+    color: var(--primary-color);
+    cursor: pointer;
+}

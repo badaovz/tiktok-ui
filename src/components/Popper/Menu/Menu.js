@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 const cx = classNames.bind(styles);
 
-const Menu = ({ children, hideOnClick = false, user, items = [], onChange = () => {} }) => {
+const Menu = ({ children, hideOnClick = false, items = [], onChange = () => {} }) => {
     const [history, setHistory] = useState([{ data: items }]);
     const current = history[history.length - 1];
 

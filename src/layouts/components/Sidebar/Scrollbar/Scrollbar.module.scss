@@ -1,0 +1,20 @@
+.wrapper {
+    height: 66px;
+    padding: 0 4px;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1) scale(5) translateZ(-4px) translateZ(-2px);
+    position: absolute;
+    top: 0;
+    transform-origin: right top;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+    right: 0;
+    transform-origin: right top;
+
+    &.scrollbar-thumb {
+        width: 6px;
+        height: 100%;
+        border-radius: 3px;
+        background: rgba(22, 24, 35, .06);
+    }
+}
