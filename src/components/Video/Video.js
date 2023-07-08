@@ -12,7 +12,7 @@ const Video = (props, ref) => {
         },
     }));
 
-    return <video ref={videoRef} src={video} width={'100%'} autoPlay style={{ borderRadius: '10px' }} />;
+    return <video ref={videoRef} src={video} width={'100%'} controls muted autoPlay style={{ borderRadius: '10px' }} />;
 };
 
 export default forwardRef(Video);

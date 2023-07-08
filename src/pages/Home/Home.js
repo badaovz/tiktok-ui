@@ -62,9 +62,9 @@ const Home = () => {
 
             <div className={cx('home__content')}>
                 <Video ref={videoRef} />
-                <button className={cx('home__btn')} onClick={handleControl}>
+                {/* <button className={cx('home__btn')} onClick={handleControl}>
                     <FontAwesomeIcon icon={icon} />
-                </button>
+                </button> */}
                 <div className={cx('home__more')}>
                     <button>
                         <span>
